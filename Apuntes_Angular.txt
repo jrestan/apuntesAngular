@@ -168,7 +168,13 @@ https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#n
 
 
 
+Seccion 8
+==========
+Esta será la primera URL a usar para busqueda por paises
+es un end point
+https://restcountries.com/v2/name/peru
 
+https://restcountries.com/#api-endpoints-v2-full-name
 
 
 
