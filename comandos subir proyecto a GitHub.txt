@@ -1,0 +1,62 @@
+
+git init   //normalmente el proyecto angular ya viene con esto
+
+//Si se tiene una configuracion global con otras credenciales se podria poner esto
+//para tener una local
+git congif user.name "jrestan"
+git congif user.email "javier.restan@outlook.es"
+git config --local -l
+
+//En GitHub crear un nuevo repositorio
+//Luego en la linea de comandos:
+
+//Se podria suponer que luego de crear el proyecto angular se han hecho cambios
+//entonces agregar estas dos lineas
+git add -A
+git commit -m "Mi primea actualizacion"
+
+//Luego los comandos para subir por primera vez
+git remote add origin https://github.com/jrestan/<NOMBRE_DE_MI_REPOSITORIO>.git
+git branch -M main
+git push -u origin main
+
+**** FIN ****
+
+//luego de hacer mas cambios
+git status   //solo para ver los nuevos cambios
+git add -A
+git commit -m "Mi segunda actualizacion"
+git push -u origin main
+
+
+//para descargar el proyecto en otra maquina (o en otra carpeta)
+git clone https://github.com/jrestan/<NOMBRE_DE_MI_REPOSITORIO>.git
+//entrar a la carpeta creada con CD
+
+//luego de hacer mas cambios se hace lo mismo
+git status   //solo para ver los nuevos cambios
+git add -A
+git commit -m "Mi nnnnn actualizacion"
+git push -u origin main
+
+
+//para descargar los cambios hechos en otra maquina
+git pull origin main
+
+
+//Esto es lo que sale en GitHub cuando se crea un nuevo repositorio
+
+…or create a new repository on the command line
+echo "# prueba_a_borrar" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jrestan/prueba_a_borrar.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/jrestan/prueba_a_borrar.git
+git branch -M main
+git push -u origin main
+

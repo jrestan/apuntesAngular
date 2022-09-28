@@ -1,0 +1,176 @@
+Video 4 
+Instalaciones Necesarias
+- Visual Studio Code
+- Postman
+- Mongo Compass
+   Version de MongoDB Compass 1.25.0 en el video ... Actualmente esta la 1.32.2
+- Git
+  Crear cuenta en GitHub
+  git config --global user.name "Tu nombre"
+  git config --global user.email "Tu correo"
+
+- Node
+
+  node --version
+  Version de Node 14.15.4 LTS instale la misma que del video
+
+  con el Node se instala el "NPM" 
+  npm --version
+  6.14.10
+
+
+En visual Studio se Instalo
+- Activitus Bar
+- [Deprecated] Bracket Pair Colorizer 2 (No lo instale por que esta obsoleto, SI se necesita la instalaré.
+- Material Icon Theme (para que los archivos de los proyectos tengan su icono segun el tipo de archivo)
+- Angular Snippets
+- Angular Language Service
+- Angular Inline
+- Auto Close Tag
+- TypeScript importer
+
+
+Se instala el angular CLI con la consola como administrador
+>npm install -g @angular/cli
+>ng --version
+En mi PC tuve que ejecutar "ng version" sin el --
+ng --help si funciono
+
+La version de angular que se instalo en mi pc: Angular CLI: 14.0.4... 
+En el video es Angular CLI: 11.1.0
+
+Angular CLI: 14.0.4
+Node: 14.15.4
+Package Manager: npm 6.14.10
+OS: win32 x64
+
+Angular:
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1400.4 (cli-only)
+@angular-devkit/core         14.0.4 (cli-only)
+@angular-devkit/schematics   14.0.4 (cli-only)
+@schematics/angular          14.0.4 (cli-only)
+
+
+Cada 6 meses se actualiza una nueva version de angular
+
+Si sabes Javascript sabes el 80% de typescript
+Microsoft es el que da soporte a TypeScript
+
+extencion de TypeScrip es ts y Javascript js
+
+intellisense es el completado de codigo o las ayudas en la interfaz de programacion
+
+Typescript tiene la ayuda y un intellisense fuerte
+Tiene tipado estricto y errores en momento de escritura
+Nos permite la inyeccion de dependencias
+
+*****************
+Los comandos de angular
+
+https://angular.io/cli
+
+*****************************************
+
+Seccion 3
+=============
+- Me descargue el archivo curso-angular-intro-typescript-ecmascript.zip descomprimi y renombre ts-intro
+- Aqui segun dice se va a hablar de ecmacscript
+- No es angular lo que se tiene, Es un proyecto webpack que permite escribir codigo de TypeScript y botarlo en unservidor y poder ver los cambios en un navegador web.
+- Se abre una terminal en VSCode y se ejecuta "npm install" para que se instalen las dependencias
+- Se ejecuta el prograna entrando a la pestaña "SCRIPTS NPM" (en la parte inferior izquierda); y en package.json se ejecuta "start", que lo que hace es ejecutar el comando "npm start" (Para que aparezca SCRIPTS NPM, arriba, donde dice EXPLORADOR, hice clic en el menu "..." y habilite Scripts NPM)
+- Otra forma de ejecutar el proyecto es desde la consola cmd,, dirigirse al directorio del proyecto,, y ejecutar "npm start", y lo hara exactamente igual
+
+>npm install
+>npm start
+
+Tipos Basicos y Conceptos Generales
+
+https://www.typescriptlang.org/docs/handbook/basic-types.html
+
+Seccion 4
+=========
+Crear un proyecto angular en consola con el comando "ng" de angular/cli
+
+>ng new my_proyecto
+ This setting helps improve maintainability and catch bug ahead of time. For more information.... Y 
+ Would you like to add Angular routing (y/n) N  (para poder hacerlo de forma manual)
+ -se abre un menu, ahi seleccionamos CSS
+ -se crea el proyecto ya con la carpeta "node-modules" no hace falta hacer "npm install" como en el proyecto anterior.
+ -la carpeta de proyecto se renombro a "01-bases"
+
+>ng serve -o
+ -se compila y carga en proyecto en un navegador web
+ -el -o es para que lo abra ni bien este disponible
+
+>ng generate component Heroes/listado
+>ng g c Heroes/listado
+  -cualquiera de los dos, yo use el segundo
+  -genera el componente listado.component en la carpeta Heroes/listado. La subcapeta "listado" no existe, el comando la crea.
+
+
+
+
+Seccion 5
+==========
+>ng g m dbz
+   -Va a generar un nuevo modulo llamado dbz.module.tz en un nuevo directorio llamado dbz
+   -En las clases anteriores esto se hizo manualmente pero ahora se hace mediante comando
+
+>ng g c dbz/mainPage
+o mejor:
+>ng g c dbz/mainPage --skipTests  <===no funciono skipTests parece ser por la version
+>ng g c dbz/mainPage --skip-tests <===A mi me funciono asi con mi CLI-14
+    -Va a generar el componente MainPageComponent dentro del modulo "dbz". 
+    -El skipTests o skip-tests es para que no genere los archivos test.
+    -Va a crear dentro de la carpeta dbz la carpeta "main-page". 
+    -Y los archivos css, ts, y html dentro de main-page tendran la misma nomenclatura:
+    -main-page.component.css, main-page.component.ts, main-page.component.html
+    -Ademas, dentro del modulo dbz.module.tz va a declarar a la clase del componente generado: "MainPageComponent".
+
+
+Seccion 6
+==========
+>ng build --prod  <==No funciono en mi version de angular 
+>ng build --configuration production
+     -Con esta segunda linea funcionó
+     -Crea la carpeta build del proyecto
+
+- Se desplego el proyecto en  https://www.netlify.com/
+- Solo hace falta loguearte, en mi caso lo hice con github y un pequeño formulario
+- Luego arraste el proyecto compilado al panel Drag and drop de la pagina.
+
+  El proyecto esta publicado en:
+  https://stirring-liger-6ff8aa.netlify.app/
+
+- ¿Que es carga peresosa?
+- ¿Ciclo de vida?
+
+Seccion 7
+==========
+- creacion del proyecto giftsApp
+
+>ng g c dbz/agregar --skip-tests -is  <===No Funciono
+>ng g c dbz/agregar --skip-tests --inline-style  <===Con este funciono
+      -con el --inline-style ya no se va a crear tampoco el archivo css dentro del componente
+
+bootstrap usado en el proyecto.
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+https://developers.giphy.com/
+https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator
+
+>ng g s gifs/services/gifs --skip-tests
+      -Crear servicios. Aqui creo la carpeta services dentro de gifs. El servicio tambien se va a llamar gifsServices pero se pone gifs nomas.
+
+
+
+
+
+
+
+
+
