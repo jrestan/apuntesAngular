@@ -183,3 +183,12 @@ Lo cambiarán por
 Sólo tengan cuidado con los nombres y los argumentos de respuesta.
 
 
+Seccion 10
+===========
+documentacion 
+Pipes de angular
+https://angular.io/api?query=pipe
+
+https://www.primefaces.org/primeng/
+
+
