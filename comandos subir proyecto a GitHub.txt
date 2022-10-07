@@ -3,8 +3,8 @@ git init   //normalmente el proyecto angular ya viene con esto
 
 //Si se tiene una configuracion global con otras credenciales se podria poner esto
 //para tener una local
-git congif user.name "jrestan"
-git congif user.email "javier.restan@outlook.es"
+git config user.name "jrestan"
+git config user.email "javier.restan@outlook.es"
 git config --local -l
 
 //En GitHub crear un nuevo repositorio
