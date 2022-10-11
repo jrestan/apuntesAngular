@@ -153,9 +153,12 @@ Seccion 7
 ==========
 - creacion del proyecto giftsApp
 
->ng g c dbz/agregar --skip-tests -is  <===No Funciono
+>ng g c dbz/agregar --skip-tests -is  <===No Funciono el is
 >ng g c dbz/agregar --skip-tests --inline-style  <===Con este funciono
+>ng g c dbz/agregar --skip-tests -s  <===Con este tambien funciono
       -con el --inline-style ya no se va a crear tampoco el archivo css dentro del componente
+      -igualmente -s funciona como --skip-tests
+
 
 bootstrap usado en el proyecto.
 https://getbootstrap.com/docs/5.0/getting-started/introduction/
@@ -185,10 +188,40 @@ Sólo tengan cuidado con los nombres y los argumentos de respuesta.
 
 Seccion 10
 ===========
-documentacion 
+Documentacion
+
 Pipes de angular
 https://angular.io/api?query=pipe
 
 https://www.primefaces.org/primeng/
+
+Se instala el prime faces en la carpeta del proyecto.
+con este comando:
+>npm install primeng primeicons
+...esto hace q el package.json se agregue las dependencias
+"primeicons": "^6.0.1",
+"primeng": "^14.1.2",
+
+
+Luego en "angular.json" en styles se pone
+"styles": [
+    "node_modules/primeicons/primeicons.css",
+    "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+    "node_modules/primeng/resources/primeng.min.css",
+    ...
+]
+
+Luego se vuelve a compilar el proyecto.
+>ng serve -o
+...Aqui esta la documentacion de la instalacion de primefaces:
+https://www.primefaces.org/primeng/setup
+
+----------------------
+
+>ng g m appRouter --flat
+    Con --flat se creo el modulo en la raiz de src/app, si no lo hacia asi se iba a crear dentro de una carpeta.
+
+
+
 
 
