@@ -237,6 +237,46 @@ Un pequeño ejemplo:
 Recuerden pueden leer más en la documentación: https://www.primefaces.org/primeflex/gridsystem.
 
 
+Prime Flex
+------------
+>npm install primeflex --save
+
+/node_modules/primeflex/primeflex.css
+
+Luego en "angular.json" en styles se pone
+"styles": [
+    "node_modules/primeicons/primeicons.css",
+    "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+    "node_modules/primeng/resources/primeng.min.css",
+    "node_modules/primeflex/primeflex.css"
+    ...
+]
+
+Seccion 11
+============
+
+Ya no desarrolle esto. Eran Pipes personalizados, No es muy largo el desarrollo.
+
+Tootbar
+Table 
+(en el Table del curso se tuvo que instalar un CDK ">npm install @angular cdk --save" esta version de primeNg ya no necesita)
+
+Seccion 12
+===========
+Rutas Hijas
+Rutas Principales
+LazyLoad
+Multiples estilos en la misma SPA
+
+Crear nueva aplicacion
+>ng new heroesApp
+
+
+https://material.angular.io/
+https://material.angular.io/components/categories
+
+>ng add @angular/material   (dice que esta es otra manera de instalar se puede tambien usando npm)
 
 
 
+***ME EQUIVOQUE SELECCIONE SCSS
