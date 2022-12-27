@@ -277,6 +277,57 @@ https://material.angular.io/components/categories
 
 >ng add @angular/material   (dice que esta es otra manera de instalar se puede tambien usando npm)
 
+>ng add @angular/material
+Purple/Green
+typografy styles? Y
+animation for Angular Material? Y
+Verificar package.jason esta ya el angular material
+
+creando modulos
+ng g m auth
+ng g m herores
+ng g m material  aqui vamos a colocar todos los modulos q vienen en material designe
+ng g m herores
+
+ng g  c auth/pages/login --skip-tests -s
+ng g  c auth/pages/registro --skip-tests -s
+
+ng g  c heroes/pages/agregar --skip-tests -s
+ng g  c heroes/pages/buscar --skip-tests -s
+ng g  c heroes/pages/heroe --skip-tests -s
+ng g  c heroes/pages/home --skip-tests -s
+ng g  c heroes/pages/listado --skip-tests -s
+
+ng g  c shared/errorPage --skip-tests -s
+
+ng g m appRouting --flat  se crea app-routing.module.ts al mismo nivel que los app.component.* y el app.module.ts
+                          el --flat es precisamente para que lo cree en esa linea y no dentro de un directorio
+                          si no se pone el --flat si creara el directorio
+
+ng g m auth/authRouting --flat
+ng g m heroes/heroesRouting --flat
 
 
-***ME EQUIVOQUE SELECCIONE SCSS
+Seccion 13
+===========
+- Angular Material
+- Interfaces y tipado
+- Pipes personalizados
+- Variables de entorno
+- Autocomplete de AngularMaterial
+- Peticiones HTTP
+- JSON-Server
+- Angular Flex y Flexbox
+Y más...
+Esta sección tiene por objetivo principal aprender a utilizar Angular Material, es la primera de varias secciones donde lo usaremos. Al final del día trabajaremos con muchos componentes de Angular material que les ayudará a ver cualquier otro tipo de paquete modularizado de la misma manera y ustedes sabrán aplicarlo.
+En la siguiente sección después de esta, continuaremos la aplicación pero realizaremos un CRUD.
+
+>npm i @angular/flex-layout
+>npm i -s @angular/flex-layout @angular/cdk
+
+Se instala el JSON-Server de manera global por lo que hay que hacerlo en modo administrador
+>npm i json-server
+>npm install -g json-server  <--- Es este el que se debe instalar
+
+Luego que se copia el archivo db.json en una carpeta se levanta el json-server
+>
